@@ -1,0 +1,14 @@
+<hello name="{{ name }}"></hello>
+<label for="fileInput" class="label">
+  
+
+        📷
+                       Upload
+  
+                    </label>
+<input #fileForm name="file" (change)="handleFileInput($event.target.files)" type="file"
+                        accept="image/x-png,image/gif,image/jpeg" id="fileInput" #cameraInput>
+<div>
+
+{{fileToUpload?.name}}
+</div>
