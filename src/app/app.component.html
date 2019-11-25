@@ -13,12 +13,11 @@
 <label for="colorInput" class="label">
   
 
-        📷
-                       Upload
+        🥗     color
   
                     </label>
-<input #colorForm name="color" (change)="handlecolorInput($event)" type="file"
-                        accept="image/x-png,image/gif,image/jpeg" id="colorInput" #colorInput>
+<input #colorForm name="color" (change)="handlecolorInput($event)" type="color"
+                        id="colorInput" #colorInput>
 <div>
 
 {{fileToUpload?.name}}
