@@ -8,6 +8,17 @@
                     </label>
 <input #fileForm name="file" (change)="handleFileInput($event.target.files)" type="file"
                         accept="image/x-png,image/gif,image/jpeg" id="fileInput" #cameraInput>
+
+
+<label for="colorInput" class="label">
+  
+
+        📷
+                       Upload
+  
+                    </label>
+<input #colorForm name="color" (change)="handlecolorInput($event)" type="file"
+                        accept="image/x-png,image/gif,image/jpeg" id="colorInput" #colorInput>
 <div>
 
 {{fileToUpload?.name}}
